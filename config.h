@@ -66,13 +66,17 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	/* function format          argument */
 
-	{ disk_used,		" Root: %s ",		"/" },
-	{ disk_used,		" Home: %s ",		"/home" },
+//	{ disk_used,		" Root: %s/",		"/" },
+//	{ disk_total,		"%s ",			"/" },
+//	{ disk_used,		" Home: %s/",		"/home" },
+//	{ disk_total,		"%s ",			"/home" },
 	{ netspeed_rx,		" Net: %s/",		"wlp2s0" },
 	{ netspeed_rx,		"%s ",			"wlp2s0" },
 	{ cpu_perc,		" CPU: %s%% ",		NULL },
 	{ ram_perc,		" RAM: %s%% ",		NULL },
 	{ run_command,		" Volume: %s ",		"volume" },
-	{ wifi_essid,		" Wifi: %s ",		"wlp2s0" },
+//	{ wifi_essid,		" Wifi: %s ",		"wlp2s0" },
 	{ datetime,		" %s ",			"%F %T" },
+	{ username,		" %s",			NULL },
+	{ hostname,		"@%s ",			NULL },
 };
