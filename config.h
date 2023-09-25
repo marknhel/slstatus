@@ -4,7 +4,7 @@
 const unsigned int interval = 1000;
 
 /* text to show if no value can be retrieved */
-static const char unknown_str[] = "n/a";
+static const char unknown_str[] = "";
 
 /* maximum output string length */
 #define MAXLEN 2048
@@ -68,17 +68,17 @@ static const struct arg args[] = {
 
 //	{ disk_used,		" Root: %s/",		"/" },
 //	{ disk_total,		"%s ",			"/" },
-	{ run_command,		" %s ",			"sb-music" },
+	{ run_command,		"%s",			"sb-music" },
 //	{ disk_used,		" Home: %s/",		"/home" },
 //	{ disk_total,		"%s ",			"/home" },
-	{ netspeed_rx,		" Net: %s/",		"wlp2s0" },
-	{ netspeed_rx,		"%s ",			"wlp2s0" },
-	{ cpu_perc,		" CPU: %s%% ",		NULL },
-	{ ram_perc,		" RAM: %s%% ",		NULL },
-	{ run_command,		" Volume: %s ",		"volume" },
-	{ wifi_essid,		" Wifi: %s ",		"wlp2s0" },
+	{ run_command,		"%s",			"sb-nettraf" },
+	{ ram_perc,		" RAM: %s%%",		NULL},
+	{ cpu_perc,		" CPU: %s%% ",		NULL},
+	{ run_command,		"%s",			"sb-volume" },
+	{ run_command,		"%s",			"sb-bluetooth" },
+	{ run_command,		"%s",			"sb-wifi" },
 //	{ datetime,		" %s ",			"%F %T" },
-	{ run_command,		" %s ",			"sb-clock" },
+	{ run_command,		" %s",			"sb-clock" },
 //	{ username,		" %s",			NULL },
 //	{ hostname,		"@%s ",			NULL },
 };
